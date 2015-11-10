@@ -1,0 +1,11 @@
+{
+    "io.github.siegfriedbolz.cordova.plugins.fileopener2": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/siegfriedbolz/cordova-plugin-file-opener2.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}
