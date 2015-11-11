@@ -23,6 +23,7 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
+	<preference value="3.7.0" name="phonegap-version"/>
     <gap:plugin name="com.disusered.open" />
     <gap:plugin name="cordova-plugin-file" />
     <gap:plugin name="cordova-plugin-file-transfer" />
