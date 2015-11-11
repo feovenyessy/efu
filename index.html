@@ -21,8 +21,22 @@
 		}
 		
 		function test() {
-			alert('look');
-			cordova.plugins.disusered.open('file:/sdcard/edocs/export.csv');
+var open = cordova.plugins.disusered.open;
+
+function success() {
+  console.log('Success');
+}
+
+function error(code) {
+  if (code === 1) {
+    console.log('No file handler found');
+  } else {
+    console.log('Undefined error');
+  }
+}
+
+open('file:/sdcard/edocs/export.csv', success, error);
+			//cordova.plugins.disusered.open('file:/sdcard/edocs/export.csv');
 	
 
 		}
