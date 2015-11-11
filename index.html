@@ -19,26 +19,23 @@
 		function listen_ready() {
 			document.addEventListener("deviceready", onDeviceReady, false);
 		}
-		
+
+		function success() {
+		  alert('Success');
+		}
+
+		function error(code) {
+		  if (code === 1) {
+			alert('No file handler found');
+		  } else {
+			alert('Undefined error');
+		  }
+		}
+			
 		function test() {
-var open = cordova.plugins.disusered.open;
-
-function success() {
-  console.log('Success');
-}
-
-function error(code) {
-  if (code === 1) {
-    console.log('No file handler found');
-  } else {
-    console.log('Undefined error');
-  }
-}
-
-open('file:/sdcard/edocs/export.csv', success, error);
+			var open = cordova.plugins.disusered.open;
+			open('file:/sdcard/edocs/export.csv', success, error);
 			//cordova.plugins.disusered.open('file:/sdcard/edocs/export.csv');
-	
-
 		}
 		
 		function onDeviceReady() {
